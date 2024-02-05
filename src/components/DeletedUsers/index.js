@@ -83,7 +83,7 @@ const useToolbarStyles = makeStyles((theme) => ({
 // toolbar when we select specific user this function calls or else show search bar
 const EnhancedTableToolbar = (props) => {
   const classes = useToolbarStyles();
-  const { numSelected, jobids, setJobids, autocomplete, handleChangeData, enableAll } = props;
+  const { numSelected, autocomplete, handleChangeData, enableAll } = props;
 
 
 

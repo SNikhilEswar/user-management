@@ -219,7 +219,7 @@ const Users = () => {
   const [open, setOpen] = React.useState(false);
   const [openDelete, setOpenDelete] = React.useState(false);
   const [isEditMode, setIsEditMode] = React.useState(false);
-  const [jobids, setJobids] = React.useState('');
+  // const [jobids, setJobids] = React.useState('');
 
   // imported hook with contextApi
   const { rows, fetchData, autocomplete, fetchSingleData, selected, setSelected, deleteAllUsers, formateDate, loading, error } = useApi();
@@ -394,7 +394,7 @@ const Users = () => {
                         <TableCell align="left">{row.email}</TableCell>
                         <TableCell align="left">{row.fullAddress}</TableCell>
                         <TableCell align="left">{row.phoneNumber}</TableCell>
-                        <TableCell align="left">{row.status}</TableCell>
+                        <TableCell align="left" style={{ color: row.status === 'Active' ? 'green' : 'red' }}>{row.status}</TableCell>
                         <TableCell align="left">
                           <Tooltip title="Edit">
                             <IconButton aria-label="edit" size='small' onClick={() => handleCreate(row, 'edit')}>
