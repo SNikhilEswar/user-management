@@ -1,25 +1,3 @@
-// const mongoose = require('mongoose');
-
-// // Define the user schema
-// const UserSchema = new mongoose.Schema({
-//     uniqueId: String,          // Unique identifier for the user
-//     firstName: String,         // User's first name
-//     lastName: String,          // User's last name
-//     email: String,             // User's email address
-//     gender: String,            // User's gender
-//     selectedDate: Date,        // Date when the user was selected 
-//     fullAddress: String,       // User's full address
-//     phoneNumber: Number,       // User's phone number
-//     status: String,            // User's status (e.g., active, inactive)
-//     delete: Boolean            // Boolean indicating whether the user is deleted
-// });
-
-// // Create a Mongoose model based on the schema
-// const UserModel = mongoose.model("users", UserSchema);
-
-// // Export the model for use in other parts of the application
-// module.exports = UserModel;
-
 const mongoose = require('mongoose');
 
 // Define the user schema
